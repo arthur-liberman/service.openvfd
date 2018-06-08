@@ -19,63 +19,103 @@ msgid "Display brightness"
 msgstr ""
 
 msgctxt "#30003"
-msgid "Enable storage access (RW) indicator"
-msgstr ""
-
-msgctxt "#30004"
-msgid "Select which icon is to be used as the access indicator"
+msgid "Clock colon (:) always on"
 msgstr ""
 
 msgctxt "#30100"
-msgid "play"
+msgid "Indicators"
 msgstr ""
 
 msgctxt "#30101"
-msgid "pause"
+msgid "Enable hdmi indicator"
 msgstr ""
 
 msgctxt "#30102"
-msgid "hdmi"
+msgid "Enable cvbs indicator"
 msgstr ""
 
 msgctxt "#30103"
-msgid "cvbs"
+msgid "Enable eth indicator"
 msgstr ""
 
 msgctxt "#30104"
-msgid "eth"
+msgid "Enable wifi indicator"
 msgstr ""
 
 msgctxt "#30105"
-msgid "wifi"
+msgid "Enable setup indicator"
 msgstr ""
 
 msgctxt "#30106"
-msgid "setup"
+msgid "Enable apps indicator"
 msgstr ""
 
 msgctxt "#30107"
-msgid "apps"
+msgid "Enable usb indicator"
 msgstr ""
 
 msgctxt "#30108"
-msgid "usb"
+msgid "Enable sd indicator"
 msgstr ""
 
 msgctxt "#30109"
-msgid "sd"
+msgid "Enable power indicator"
 msgstr ""
 
 msgctxt "#30110"
-msgid "alarm"
+msgid "Enable storage access (RW) indicator"
 msgstr ""
 
 msgctxt "#30111"
-msgid "power"
+msgid "Select which icon is to be used as the access indicator"
 msgstr ""
 
-msgctxt "#30005"
-msgid "Clock colon (:) always on"
+msgctxt "#30200"
+msgid "play"
+msgstr ""
+
+msgctxt "#30201"
+msgid "pause"
+msgstr ""
+
+msgctxt "#30202"
+msgid "hdmi"
+msgstr ""
+
+msgctxt "#30203"
+msgid "cvbs"
+msgstr ""
+
+msgctxt "#30204"
+msgid "eth"
+msgstr ""
+
+msgctxt "#30205"
+msgid "wifi"
+msgstr ""
+
+msgctxt "#30206"
+msgid "setup"
+msgstr ""
+
+msgctxt "#30207"
+msgid "apps"
+msgstr ""
+
+msgctxt "#30208"
+msgid "usb"
+msgstr ""
+
+msgctxt "#30209"
+msgid "sd"
+msgstr ""
+
+msgctxt "#30210"
+msgid "alarm"
+msgstr ""
+
+msgctxt "#30211"
+msgid "power"
 msgstr ""
 
 msgctxt "#31000"

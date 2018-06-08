@@ -143,20 +143,20 @@ class vfdAddon():
 		'service-LibreELEC-Settings-getPasskey.xml']
 		appsWindows = ['addonbrowser', 'addonsettings', 'addoninformation', 'addon', 'programs']
 		states = []
-		states.append(vfdstates.vfdIconIndicator(True, 'power'))
+		if self._settings.isPowerIndicatorEnabled(): states.append(vfdstates.vfdIconIndicator(True, 'power'))
 		states.append(vfdstates.vfdCondVisibility('play', 'Player.Playing'))
 		states.append(vfdstates.vfdCondVisibility('pause', 'Player.Paused'))
-		states.append(vfdstates.vfdFileContains('hdmi', '/sys/class/amhdmitx/amhdmitx0/hpd_state', ['1']))
-		states.append(vfdstates.vfdFileContains('cvbs', '/sys/class/display/mode', ['cvbs']))
-		states.append(vfdstates.vfdFileContains('eth', '/sys/class/net/eth0/operstate', ['up', 'unknown']))
-		states.append(vfdstates.vfdFileContains('wifi', '/sys/class/net/wlan0/operstate', ['up']))
-		states.append(vfdstates.vfdWindowChecker('setup', settingsWindows))
-		states.append(vfdstates.vfdWindowChecker('apps', appsWindows))
-		states.append(vfdstates.vfdExtStorageChecker('usb', '/dev/sd'))
-		states.append(vfdstates.vfdExtStorageChecker('sd', '/dev/mmcblk'))
+		if self._settings.isHdmiIndicatorEnabled(): states.append(vfdstates.vfdFileContains('hdmi', '/sys/class/amhdmitx/amhdmitx0/hpd_state', ['1']))
+		if self._settings.isCvbsIndicatorEnabled(): states.append(vfdstates.vfdFileContains('cvbs', '/sys/class/display/mode', ['cvbs']))
+		if self._settings.isEthIndicatorEnabled(): states.append(vfdstates.vfdFileContains('eth', '/sys/class/net/eth0/operstate', ['up', 'unknown']))
+		if self._settings.isWifiIndicatorEnabled(): states.append(vfdstates.vfdFileContains('wifi', '/sys/class/net/wlan0/operstate', ['up']))
+		if self._settings.isSetupIndicatorEnabled(): states.append(vfdstates.vfdWindowChecker('setup', settingsWindows))
+		if self._settings.isAppsIndicatorEnabled(): states.append(vfdstates.vfdWindowChecker('apps', appsWindows))
+		if self._settings.isUsbIndicatorEnabled(): states.append(vfdstates.vfdExtStorageChecker('usb', '/dev/sd'))
+		if self._settings.isSdIndicatorEnabled(): states.append(vfdstates.vfdExtStorageChecker('sd', '/dev/mmcblk'))
 		self._colonIcon = vfdstates.vfdIconIndicator(False, 'colon')
 		states.append(self._colonIcon)
-		if (self._settings.isStorageIndicator()):
+		if (self._settings.isStorageIndicatorEnabled()):
 			for state in states:
 				if (state.getLedName() == self._settings.getStorageIndicatorIcon()):
 					states.remove(state)
