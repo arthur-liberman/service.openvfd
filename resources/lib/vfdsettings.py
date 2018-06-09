@@ -70,12 +70,6 @@ class vfdSettings:
 	def getCharacterIndexes(self):
 		return self._characterIndexes
 
-	def isStorageIndicator(self):
-		return self._storageIndicator
-
-	def getStorageIndicatorIcon(self):
-		return self._storageIndicatorIcon
-
 	def isColonOn(self):
 		return self._colonOn
 
@@ -103,6 +97,39 @@ class vfdSettings:
 	def getModePlaybackTimeBehavior(self):
 		return self._modePlaybackTimeBehavior
 
+	def isHdmiIndicatorEnabled(self):
+		return self._hdmiIndicator
+
+	def isCvbsIndicatorEnabled(self):
+		return self._cvbsIndicator
+
+	def isEthIndicatorEnabled(self):
+		return self._ethIndicator
+
+	def isWifiIndicatorEnabled(self):
+		return self._wifiIndicator
+
+	def isSetupIndicatorEnabled(self):
+		return self._setupIndicator
+
+	def isAppsIndicatorEnabled(self):
+		return self._appsIndicator
+
+	def isUsbIndicatorEnabled(self):
+		return self._usbIndicator
+
+	def isSdIndicatorEnabled(self):
+		return self._sdIndicator
+
+	def isPowerIndicatorEnabled(self):
+		return self._powerIndicator
+
+	def isStorageIndicatorEnabled(self):
+		return self._storageIndicator
+
+	def getStorageIndicatorIcon(self):
+		return self._storageIndicatorIcon
+
 	def readValues(self):
 		self._modeTempInterval = vfdSettings.__modeTempIntervalValues.get(getSettingInt('mode.temperature.interval'), 0)
 		self._modeTempDuration = vfdSettings.__modeTempDurationValues.get(getSettingInt('mode.temperature.duration'), 5)
@@ -116,6 +143,15 @@ class vfdSettings:
 		self._displayOn = getSettingBool('display.on')
 		if (self._displayOn):
 			self._displayBrightness = getSettingInt('display.brightness')
+			self._hdmiIndicator = getSettingBool('display.hdmi.indicator')
+			self._cvbsIndicator = getSettingBool('display.cvbs.indicator')
+			self._ethIndicator = getSettingBool('display.eth.indicator')
+			self._wifiIndicator = getSettingBool('display.wifi.indicator')
+			self._setupIndicator = getSettingBool('display.setup.indicator')
+			self._appsIndicator = getSettingBool('display.apps.indicator')
+			self._usbIndicator = getSettingBool('display.usb.indicator')
+			self._sdIndicator = getSettingBool('display.sd.indicator')
+			self._powerIndicator = getSettingBool('display.power.indicator')
 			self._storageIndicator = getSettingBool('display.storage.indicator')
 			self._storageIndicatorIcon = getSetting('display.storage.indicator.icon')
 			self._colonOn = getSettingBool('display.colon.on')
@@ -135,6 +171,15 @@ class vfdSettings:
 	def __initDefaultValues(self):
 		if not (self._displayOn):
 			self._displayBrightness = 7
+			self._hdmiIndicator = True
+			self._cvbsIndicator = True
+			self._ethIndicator = True
+			self._wifiIndicator = True
+			self._setupIndicator = True
+			self._appsIndicator = True
+			self._usbIndicator = True
+			self._sdIndicator = True
+			self._powerIndicator = True
 			self._storageIndicator = False
 			self._storageIndicatorIcon = ''
 			self._colonOn = False
