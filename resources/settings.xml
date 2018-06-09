@@ -3,7 +3,7 @@
 	<category label="30000">
 		<setting label="30001" type="bool" id="display.on" default="true" />
 		<setting label="30002" type="slider" id="display.brightness" default="7" range="0,7" option="int" enable="eq(-1,true)" />
-		<setting label="30003" type="bool" id="display.colon.on" default="false" enable="eq(-6,true)" />
+		<setting label="30003" type="bool" id="display.colon.on" default="false" enable="eq(-2,true)" />
 	</category>
 	<category label="30100">
 		<setting label="30001" type="bool" id="display.on" default="true" visible="false"/>
@@ -17,7 +17,7 @@
 		<setting label="30108" type="bool" id="display.sd.indicator" default="true" enable="eq(-8,true)" />
 		<setting label="30109" type="bool" id="display.power.indicator" default="true" enable="eq(-9,true)" />
 		<setting label="30110" type="bool" id="display.storage.indicator" default="false" enable="eq(-10,true)" />
-		<setting label="30111" type="labelenum" id="display.storage.indicator.icon" lvalues="30200|30201|30202|30203|30204|30205|30206|30207|30208|30209|30210|30211" default="10" enable="eq(-12,true) + eq(-1,true)" />
+		<setting label="30111" type="labelenum" id="display.storage.indicator.icon" lvalues="30200|30201|30202|30203|30204|30205|30206|30207|30208|30209|30210|30211" default="10" enable="eq(-11,true) + eq(-1,true)" />
 	</category>
 	<category label="31000">
 		<setting label="31001" type="lsep" />
