@@ -191,6 +191,9 @@ class vfdDisplayModePlaybackTime(xbmc.Player):
 		if (self._isPlayingWithTimeEnabled()):
 			self._manager.addLayer(self)
 
+	def onPlayBackEnded(self):
+		self.onPlayBackStopped()
+
 	def onPlayBackStopped(self):
 		self._stopTimers()
 		self._data.string_main = "\0"
