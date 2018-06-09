@@ -151,7 +151,7 @@ class vfdSettings:
 			self._appsIndicator = getSettingBool('display.apps.indicator')
 			self._usbIndicator = getSettingBool('display.usb.indicator')
 			self._sdIndicator = getSettingBool('display.sd.indicator')
-			self._powerIndicator = getSettingBool('display..indicator')
+			self._powerIndicator = getSettingBool('display.power.indicator')
 			self._storageIndicator = getSettingBool('display.storage.indicator')
 			self._storageIndicatorIcon = getSetting('display.storage.indicator.icon')
 			self._colonOn = getSettingBool('display.colon.on')
