@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.openvfd" name="OpenVFD" version="1.0.0" provider-name="Arthur Liberman">
+<addon id="service.openvfd" name="OpenVFD" version="1.0.1" provider-name="Arthur Liberman">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -9,5 +9,32 @@
     <description>Service for controlling VFD displays, e.g. Display icons (Ethernet/WiFi connection status) Time, Date, Playback time</description>
     <source>https://github.com/arthur-liberman/service.openvfd</source>
     <platform>all</platform>
+    <news>v1.0.1 (2018-06-12)
+- Add support for turning individual indicators on and off.
+- Fix playback time remains on display after the playback ends.
+
+OpenVFD:
+--------
+v1.0.0
+- Rename addon to OpenVFD.
+- Add temperature, playback time (PVR sources not supported) and date display.
+- Expand and rearrange the settings.
+
+FD628:
+------
+v110
+- Rewrite add-on from scratch
+- Add support for APPS, SETUP, CVBS (X92) and POWER (A1 Max) indicators.
+- Add a configuration dialog:
+    * Adjust display brightness.
+    * Storage access indication.
+    * Advanced hardware configuration of the display.
+- Fix crash if aml_fd628 module is not loaded (led_on, led_off files don't exist)
+- Fix disable add-on from Kodi UI.
+- Turn off indicators when add-on is disabled.
+
+v100
+- Initial add-on   
+    </news>
   </extension>
 </addon>

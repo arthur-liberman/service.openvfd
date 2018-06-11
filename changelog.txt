@@ -1,13 +1,17 @@
+v1.0.1 (2018-06-12)
+- Add support for turning individual indicators on and off.
+- Fix playback time remains on display after the playback ends.
+
 OpenVFD:
 --------
-1.0.0
+v1.0.0
 - Rename addon to OpenVFD.
 - Add temperature, playback time (PVR sources not supported) and date display.
 - Expand and rearrange the settings.
 
 FD628:
 ------
-110
+v110
 - Rewrite add-on from scratch
 - Add support for APPS, SETUP, CVBS (X92) and POWER (A1 Max) indicators.
 - Add a configuration dialog:
@@ -18,5 +22,5 @@ FD628:
 - Fix disable add-on from Kodi UI.
 - Turn off indicators when add-on is disabled.
 
-100
+v100
 - Initial add-on
