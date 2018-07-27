@@ -125,6 +125,7 @@ class vfdDisplayModeTemperature(vfdDisplayModeBase):
 	def __init__(self, manager, settings):
 		super(vfdDisplayModeTemperature, self).__init__(manager, settings)
 		self._data.mode = 5
+		self._data.temperature = 0
 		self.onSettingsChanged()
 
 	def onSettingsChanged(self):
@@ -134,7 +135,6 @@ class vfdDisplayModeTemperature(vfdDisplayModeBase):
 
 	def update(self):
 		if (self._enabled):
-			self._data.temperature = 0
 			try:
 				with open("/sys/class/thermal/thermal_zone0/temp", "r") as temp:
 					self._data.temperature = int(temp.read()) / 1000
