@@ -1,3 +1,6 @@
+v1.0.2 (2018-08-01)
+- Fix temperature showing 0C in some situations.
+
 v1.0.1 (2018-06-12)
 - Add support for turning individual indicators on and off.
 - Fix playback time remains on display after the playback ends.
