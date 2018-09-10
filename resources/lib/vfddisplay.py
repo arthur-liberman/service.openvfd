@@ -220,7 +220,7 @@ class vfdDisplayModePlaybackTime(xbmc.Player):
 			behavior = self._settings.getModePlaybackTimeBehavior()
 			time = self.getTime()
 			totalTime = self.getTotalTime()
-			if (behavior == 0):
+			if (behavior == 0 and totalTime >= time):
 				time = totalTime - time
 			elif (behavior == 1):
 				pass # keep "time = self.getTime()"
