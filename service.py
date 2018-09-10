@@ -154,6 +154,9 @@ class vfdAddon():
 		if self._settings.isAppsIndicatorEnabled(): states.append(vfdstates.vfdWindowChecker('apps', appsWindows))
 		if self._settings.isUsbIndicatorEnabled(): states.append(vfdstates.vfdExtStorageChecker('usb', '/dev/sd'))
 		if self._settings.isSdIndicatorEnabled(): states.append(vfdstates.vfdExtStorageChecker('sd', '/dev/mmcblk'))
+		states.append(vfdstates.vfdIconIndicator(False, 'b-t'))
+		states.append(vfdstates.vfdIconIndicator(False, 'spdif'))
+		states.append(vfdstates.vfdIconIndicator(False, 'alarm'))
 		self._colonIcon = vfdstates.vfdIconIndicator(False, 'colon')
 		states.append(self._colonIcon)
 		if (self._settings.isStorageIndicatorEnabled()):

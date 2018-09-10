@@ -118,6 +118,14 @@ msgctxt "#30211"
 msgid "power"
 msgstr ""
 
+msgctxt "#30212"
+msgid "b-t"
+msgstr "bluetooth"
+
+msgctxt "#30213"
+msgid "spdif"
+msgstr ""
+
 msgctxt "#31000"
 msgid "Display modes"
 msgstr ""
