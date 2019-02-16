@@ -6,18 +6,17 @@
 		<setting label="30003" type="bool" id="display.colon.on" default="false" enable="eq(-2,true)" />
 	</category>
 	<category label="30100">
-		<setting label="30001" type="bool" id="display.on" default="true" visible="false"/>
-		<setting label="30101" type="bool" id="display.hdmi.indicator" default="true" enable="eq(-1,true)" />
-		<setting label="30102" type="bool" id="display.cvbs.indicator" default="true" enable="eq(-2,true)" />
-		<setting label="30103" type="bool" id="display.eth.indicator" default="true" enable="eq(-3,true)" />
-		<setting label="30104" type="bool" id="display.wifi.indicator" default="true" enable="eq(-4,true)" />
-		<setting label="30105" type="bool" id="display.setup.indicator" default="true" enable="eq(-5,true)" />
-		<setting label="30106" type="bool" id="display.apps.indicator" default="true" enable="eq(-6,true)" />
-		<setting label="30107" type="bool" id="display.usb.indicator" default="true" enable="eq(-7,true)" />
-		<setting label="30108" type="bool" id="display.sd.indicator" default="true" enable="eq(-8,true)" />
-		<setting label="30109" type="bool" id="display.power.indicator" default="true" enable="eq(-9,true)" />
-		<setting label="30110" type="bool" id="display.storage.indicator" default="false" enable="eq(-10,true)" />
-		<setting label="30111" type="labelenum" id="display.storage.indicator.icon" lvalues="30200|30201|30202|30203|30204|30205|30206|30207|30208|30209|30210|30211|30212|30213" default="10" enable="eq(-11,true) + eq(-1,true)" />
+		<setting label="30101" type="bool" id="display.hdmi.indicator" default="true" />
+		<setting label="30102" type="bool" id="display.cvbs.indicator" default="true" />
+		<setting label="30103" type="bool" id="display.eth.indicator" default="true" />
+		<setting label="30104" type="bool" id="display.wifi.indicator" default="true" />
+		<setting label="30105" type="bool" id="display.setup.indicator" default="true" />
+		<setting label="30106" type="bool" id="display.apps.indicator" default="true" />
+		<setting label="30107" type="bool" id="display.usb.indicator" default="true" />
+		<setting label="30108" type="bool" id="display.sd.indicator" default="true" />
+		<setting label="30109" type="bool" id="display.power.indicator" default="true" />
+		<setting label="30110" type="bool" id="display.storage.indicator" default="false" />
+		<setting label="30111" type="labelenum" id="display.storage.indicator.icon" lvalues="30200|30201|30202|30203|30204|30205|30206|30207|30208|30209|30210|30211|30212|30213" default="10" enable="eq(-1,true)" />
 	</category>
 	<category label="31000">
 		<setting label="31001" type="lsep" />
