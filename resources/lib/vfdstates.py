@@ -105,6 +105,33 @@ class vfdFileContains(vfdState):
 				break
 		return ret
 
+class vfdNetworkChecker(vfdState):
+	def __init__(self, ledName, prefix, strings):
+		super(vfdNetworkChecker, self).__init__(ledName)
+		self._prefix = prefix
+		self._strings = strings
+		self._files = []
+
+	def __str__(self):
+		return self._getStr('vfdNetworkChecker')
+
+	def update(self):
+		value = False
+		self.__updateInterfaces()
+		for inet in self._files:
+			inet.update()
+			if inet.getValue():
+				value = True
+				break
+		self._update(value)
+
+	def __updateInterfaces(self):
+		for folder, subs, files in os.walk('/sys/class/net'):
+			for sub in subs:
+				if sub.startswith(self._prefix) and all(sub != inet.getLedName() for inet in self._files):
+					path = os.path.realpath(os.path.join(folder, sub, 'operstate'))
+					self._files.append(vfdFileContains(sub, path, self._strings))
+
 class vfdWindowChecker(vfdState):
 	def __init__(self, ledName, windows):
 		super(vfdWindowChecker, self).__init__(ledName)

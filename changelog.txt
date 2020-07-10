@@ -1,3 +1,10 @@
+v1.0.4 (2020-07-10)
+- Add support for multiple Ethernet and WiFi interfaces for the network indicators.
+
+v1.0.3 (2019-02-16)
+- Fix Alarm for storage access indicator.
+- Fix Indicators items being greyed out in the addon settings.
+
 v1.0.2 (2018-08-01)
 - Fix temperature showing 0C in some situations.
 
