@@ -100,7 +100,7 @@ class vfdFileContains(vfdState):
 	def __checkContent(self, content):
 		ret = False
 		for s in self._strings:
-			if (s in content):
+			if (s.encode() in content):
 				ret = True
 				break
 		return ret

@@ -137,7 +137,7 @@ class vfdDisplayModeTemperature(vfdDisplayModeBase):
 		if (self._enabled):
 			try:
 				with open("/sys/class/thermal/thermal_zone0/temp", "r") as temp:
-					self._data.temperature = int(temp.read()) / 1000
+					self._data.temperature = int(int(temp.read()) / 1000)
 			except Exception as inst:
 				kodiLogError(inst)
 
@@ -196,7 +196,7 @@ class vfdDisplayModePlaybackTime(xbmc.Player):
 
 	def onPlayBackStopped(self):
 		self._stopTimers()
-		self._data.string_main = "\0"
+		self._data.string_main = b"\0"
 		self._manager.removeLayer(self)
 
 	def enable(self, state):
@@ -244,9 +244,9 @@ class vfdDisplayModePlaybackTime(xbmc.Player):
 				except Exception as inst:
 					kodiLog(inst)
 			if (infoTag is not None):
-				self._data.string_main = unicode(infoTag.getTitle(), "utf-8").encode("ascii", "ignore")
+				self._data.string_main = infoTag.getTitle().encode("ascii", "ignore")
 			else:
-				self._data.string_main = "\0"
+				self._data.string_main = b"\0"
 
 	def isAlwaysOnTop(self):
 		return self._settings.getModePlaybackTimeDuration() == 0
@@ -332,7 +332,7 @@ class vfdDisplayManager(object):
 					if (mode):
 						pipe.write(mode.getDataBuffer())
 					else:
-						pipe.write("\0") #return to clock.
+						pipe.write(b"\0") #return to clock.
 			except Exception as inst:
 				kodiLogError(inst)
 			self._rlock.release()
