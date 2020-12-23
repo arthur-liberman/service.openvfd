@@ -188,7 +188,7 @@ class vfdSettings:
 			self._displayType = 0
 			self._displayController = 0
 			self._commonAnode = False
-			self._characterIndexes = range(0, 7)
+			self._characterIndexes = list(range(0, 7))
 
 	__modeTempIntervalValues = { 0:0, 1:30, 2:60, 3:300, 4:600, 5:900, 6:1800, 7:3600 }
 	__modeTempDurationValues = { 0:5, 1:10, 2:15, 3:30 }

@@ -17,7 +17,7 @@
 
 import xbmc
 import os
-from vfdutils import *
+from .vfdutils import *
 
 class vfdState(object):
 	def __init__(self, ledName):
@@ -199,7 +199,7 @@ class vfdExtStorageCount(vfdState):
 			if (not drive in self._driveStats):
 				self._driveStats[drive] = None
 				kodiLogNotice('vfdExtStorageCount.update: New drive found \'{0}\''.format(drive))
-		for path, stats in self._driveStats.iteritems():
+		for path, stats in list(self._driveStats.items()):
 			newStats = self.__readStatus(path)
 			if (stats != None and newStats != None):
 				if (self._read):

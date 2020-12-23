@@ -19,7 +19,7 @@ import ctypes
 import struct
 import threading
 import xbmc
-from vfdutils import *
+from .vfdutils import *
 
 class _vfd_time_date(ctypes.Structure):
 	_fields_ = [
