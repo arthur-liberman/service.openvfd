@@ -103,7 +103,7 @@ class vfdAddon():
 		if (os.path.isfile(path)):
 			with open(path, "wb") as vfd:
 				for j in values:
-					vfd.write(j)
+					vfd.write(j.encode())
 					vfd.flush()
 
 	def onSettingsChanged(self):

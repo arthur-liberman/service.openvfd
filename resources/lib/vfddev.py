@@ -17,13 +17,13 @@
 
 import os
 import struct
-from vfdutils import *
+from .vfdutils import *
 
 _led_cmd = '/sys/class/leds/openvfd/led_cmd'
 
 class vfdDev:
 	def __init__(self):
-		import ioctl
+		from . import ioctl
 		import ctypes
 		size = ctypes.sizeof(ctypes.c_int(0))
 		self._VFD_IOC_MAGIC = ord('M')
@@ -63,7 +63,7 @@ class vfdDev:
 		self.__writeVfd(self._VFD_IOC_USE_DTB_CONFIG, 0)
 
 	def __readVfd(self, cmd, isBuf = False):
-		import ioctl
+		from . import ioctl
 		ret = None
 		if (ioctl.DIR(cmd) == ioctl.READ and self.__writeVfd(cmd, 0)):
 			with open(_led_cmd, "rb") as vfd:
