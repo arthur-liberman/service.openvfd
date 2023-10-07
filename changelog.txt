@@ -1,3 +1,9 @@
+v1.0.6 (2023-10-07)
+- Fix compatibility with Kodi 21 "Omega".
+
+v1.0.5 (2020-12-28)
+- Fix compatibility with Kodi 19 "Matrix".
+
 v1.0.4 (2020-07-10)
 - Add support for multiple Ethernet and WiFi interfaces for the network indicators.
 

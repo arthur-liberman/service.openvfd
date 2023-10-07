@@ -31,7 +31,7 @@ def kodiLogWarning(message):
 	kodiLog(message, xbmc.LOGWARNING)
 
 def kodiLogNotice(message):
-	kodiLog(message, xbmc.LOGNOTICE)
+	kodiLog(message, xbmc.LOGINFO)
 
 class vfdTimer(object):
 	def __init__(self, interval, function, args=[], kwargs={}):
