@@ -6,7 +6,9 @@
   <extension point="xbmc.service" library="service.py" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Service for controlling VFD displays</summary>
+    <summary lang="es">Servicio de control de pantallas VFD</summary>
     <description lang="en">Service for controlling VFD displays, e.g. Display icons (Ethernet/WiFi connection status) Time, Date, Playback time</description>
+    <description lang="es">Servicio para controlar las pantallas VFD, p. ej. Iconos de pantalla (estado de la conexión Ethernet/WiFi) Hora, Fecha, Tiempo de reproducción</description>
     <source>https://github.com/arthur-liberman/service.openvfd</source>
     <platform>all</platform>
     <assets>

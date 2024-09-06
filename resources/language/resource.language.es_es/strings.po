@@ -1,0 +1,283 @@
+# Kodi Media Center language file
+# Addon Name: OpenVFD
+# Addon id: service.openvfd
+# Addon Provider: Arthur Liberman (arthur_liberman (at) hotmail.com)
+msgid ""
+msgstr ""
+
+# Kodi Settings
+msgctxt "#30000"
+msgid "General"
+msgstr "General"
+
+msgctxt "#30001"
+msgid "Turn on display"
+msgstr "Encender pantalla"
+
+msgctxt "#30002"
+msgid "Display brightness"
+msgstr "Brillo de la pantalla"
+
+msgctxt "#30003"
+msgid "Clock colon (:) always on"
+msgstr "Dos puntos del reloj (:) siempre encendidos"
+
+msgctxt "#30100"
+msgid "Indicators"
+msgstr "Indicadores"
+
+msgctxt "#30101"
+msgid "Enable hdmi indicator"
+msgstr "Habilitar indicador hdmi"
+
+msgctxt "#30102"
+msgid "Enable cvbs indicator"
+msgstr "Habilitar indicador cvbs"
+
+msgctxt "#30103"
+msgid "Enable eth indicator"
+msgstr "Habilitar indicador eth"
+
+msgctxt "#30104"
+msgid "Enable wifi indicator"
+msgstr "Habilitar indicador wifi"
+
+msgctxt "#30105"
+msgid "Enable setup indicator"
+msgstr "Habilitar indicador de configuración"
+
+msgctxt "#30106"
+msgid "Enable apps indicator"
+msgstr "Habilitar indicador de aplicaciones"
+
+msgctxt "#30107"
+msgid "Enable usb indicator"
+msgstr "Habilitar indicador usb"
+
+msgctxt "#30108"
+msgid "Enable sd indicator"
+msgstr "Habilitar indicador sd"
+
+msgctxt "#30109"
+msgid "Enable power indicator"
+msgstr "Habilitar indicador de energía"
+
+msgctxt "#30110"
+msgid "Enable storage access (RW) indicator"
+msgstr "Habilitar indicador de acceso a almacenamiento (RW)"
+
+msgctxt "#30111"
+msgid "Select which icon is to be used as the access indicator"
+msgstr "Seleccionar qué ícono usar como indicador de acceso"
+
+msgctxt "#30200"
+msgid "play"
+msgstr "reproducir"
+
+msgctxt "#30201"
+msgid "pause"
+msgstr "pausa"
+
+msgctxt "#30202"
+msgid "hdmi"
+msgstr "hdmi"
+
+msgctxt "#30203"
+msgid "cvbs"
+msgstr "cvbs"
+
+msgctxt "#30204"
+msgid "eth"
+msgstr "eth"
+
+msgctxt "#30205"
+msgid "wifi"
+msgstr "wifi"
+
+msgctxt "#30206"
+msgid "setup"
+msgstr "configuración"
+
+msgctxt "#30207"
+msgid "apps"
+msgstr "aplicaciones"
+
+msgctxt "#30208"
+msgid "usb"
+msgstr "usb"
+
+msgctxt "#30209"
+msgid "sd"
+msgstr "sd"
+
+msgctxt "#30210"
+msgid "alarm"
+msgstr "alarma"
+
+msgctxt "#30211"
+msgid "power"
+msgstr "energía"
+
+msgctxt "#30212"
+msgid "b-t"
+msgstr "bluetooth"
+
+msgctxt "#30213"
+msgid "spdif"
+msgstr "spdif"
+
+msgctxt "#31000"
+msgid "Display modes"
+msgstr "Modos de pantalla"
+
+msgctxt "#31001"
+msgid "Temperature"
+msgstr "Temperatura"
+
+msgctxt "#31002"
+msgid "Display interval"
+msgstr "Intervalo de pantalla"
+
+msgctxt "#31010"
+msgid "Never"
+msgstr "Nunca"
+
+msgctxt "#31011"
+msgid "1 min"
+msgstr "1 min"
+
+msgctxt "#31012"
+msgid "5 min"
+msgstr "5 min"
+
+msgctxt "#31013"
+msgid "10 min"
+msgstr "10 min"
+
+msgctxt "#31014"
+msgid "15 min"
+msgstr "15 min"
+
+msgctxt "#31015"
+msgid "30 min"
+msgstr "30 min"
+
+msgctxt "#31016"
+msgid "60 min"
+msgstr "60 min"
+
+msgctxt "#31003"
+msgid "Display for"
+msgstr "Mostrar por"
+
+msgctxt "#31020"
+msgid "5 sec"
+msgstr "5 seg"
+
+msgctxt "#31021"
+msgid "10 sec"
+msgstr "10 seg"
+
+msgctxt "#31022"
+msgid "15 sec"
+msgstr "15 seg"
+
+msgctxt "#31023"
+msgid "30 sec"
+msgstr "30 seg"
+
+msgctxt "#31030"
+msgid "Playback time"
+msgstr "Tiempo de reproducción"
+
+msgctxt "#31031"
+msgid "Enable Playback time"
+msgstr "Habilitar tiempo de reproducción"
+
+msgctxt "#31032"
+msgid "Behavior"
+msgstr "Comportamiento"
+
+msgctxt "#31040"
+msgid "Always"
+msgstr "Siempre"
+
+msgctxt "#31041"
+msgid "Display remaining time"
+msgstr "Mostrar tiempo restante"
+
+msgctxt "#31042"
+msgid "Display elapsed time"
+msgstr "Mostrar tiempo transcurrido"
+
+msgctxt "#31043"
+msgid "Display total time"
+msgstr "Mostrar tiempo total"
+
+msgctxt "#31050"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "#31051"
+msgid "Format"
+msgstr "Formato"
+
+msgctxt "#31052"
+msgid "dd / mm"
+msgstr "dd / mm"
+
+msgctxt "#31053"
+msgid "mm / dd"
+msgstr "mm / dd"
+
+msgctxt "#32000"
+msgid "Advanced settings"
+msgstr "Configuraciones avanzadas"
+
+msgctxt "#32001"
+msgid "Enable advanced settings"
+msgstr "Habilitar configuraciones avanzadas"
+
+msgctxt "#32002"
+msgid "Display type"
+msgstr "Tipo de pantalla"
+
+msgctxt "#32003"
+msgid "Controller type"
+msgstr "Tipo de controlador"
+
+msgctxt "#32004"
+msgid "Common anode display (transposed ram)"
+msgstr "Pantalla de ánodo común (ram transpuesta)"
+
+msgctxt "#32005"
+msgid "Reorder character indexes"
+msgstr "Reordenar índices de caracteres"
+
+msgctxt "#32006"
+msgid "Index 0"
+msgstr "Índice 0"
+
+msgctxt "#32007"
+msgid "Index 1"
+msgstr "Índice 1"
+
+msgctxt "#32008"
+msgid "Index 2"
+msgstr "Índice 2"
+
+msgctxt "#32009"
+msgid "Index 3"
+msgstr "Índice 3"
+
+msgctxt "#32010"
+msgid "Index 4"
+msgstr "Índice 4"
+
+msgctxt "#32011"
+msgid "Index 5"
+msgstr "Índice 5"
+
+msgctxt "#32012"
+msgid "Index 6"
+msgstr "Índice 6"
